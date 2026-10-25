@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JRA — Portfolio</title>
+  <meta name="description" content="Portfolio of JRA — artist and designer." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fraunces:ital,opsz,wght@1,9..144,600&family=Inter:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Pixel sprites (reused with <use>) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="px-star" viewBox="0 0 7 7"><path fill="currentColor" shape-rendering="crispEdges" d="M3 0h1v1h-1zM3 1h1v1h-1zM2 2h3v1h-3zM0 3h7v1h-7zM1 4h5v1h-5zM2 5h3v1h-3zM1 6h2v1h-2zM4 6h2v1h-2z"/></symbol>
+    <symbol id="px-heart" viewBox="0 0 7 6"><path fill="currentColor" shape-rendering="crispEdges" d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/></symbol>
+  </svg>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__logo">JRA<span>!</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#works">Works</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="btn btn--small">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <svg class="px px--star px-a" aria-hidden="true"><use href="#px-star"/></svg>
+      <svg class="px px--heart px-b" aria-hidden="true"><use href="#px-heart"/></svg>
+      <svg class="px px--star px-c" aria-hidden="true"><use href="#px-star"/></svg>
+
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <p class="issue">Issue #01 &middot; Portfolio Edition</p>
+          <h1>
+            Hi, I'm <em>JRA</em>.<br />
+            I turn ideas<br />into <span class="hl">art!</span>
+          </h1>
+          <p class="lead">
+            Replace this short intro with a line about who you are and what you create.
+          </p>
+          <div class="hero__cta">
+            <a href="#works" class="btn">View my works</a>
+            <a href="#contact" class="btn btn--ghost">Get in touch</a>
+          </div>
+        </div>
+
+        <!-- HERO ARTWORK: drop your image at images/hero.jpg -->
+        <div class="hero__art-wrap reveal">
+          <div class="hero__art">
+            <img src="images/OPTIMUS PRIME.png" alt="Featured artwork by JRA"
+                 onerror="this.parentElement.classList.add('is-empty'); this.remove();" />
+            <span class="placeholder-label">Your featured artwork<small>images/OPTIMUS PRIME.png</small></span>
+          </div>
+          <span class="burst" aria-hidden="true">NEW!</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Illustration</span><i>★</i><span>Digital Art</span><i>★</i><span>Graphic Design</span><i>★</i><span>Comics</span><i>★</i><span>Pixel Art</span><i>★</i><span>UI/UX Design</span><i>★</i>
+        <span>Illustration</span><i>★</i><span>Digital Art</span><i>★</i><span>Graphic Design</span><i>★</i><span>Comics</span><i>★</i><span>Pixel Art</span><i>★</i><span>UI/UX Design</span><i>★</i>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__photo-wrap reveal">
+          <div class="about__photo">
+            <img src="images/ME.jpg" alt="Portrait of JRA"
+                 onerror="this.parentElement.classList.add('is-empty'); this.remove();" />
+            <span class="placeholder-label">Your photo<small>images/ME.jpg</small></span>
+          </div>
+        </div>
+        <div class="about__text reveal">
+          <div class="section__tag"><span class="num">01</span> About me</div>
+          <h2>A little about my story</h2>
+          <p class="dropcap">
+            Hello there! I'm JRA, a passionate artist and designer with a love for creating visually captivating works. 
+            My journey in the world of art has been fueled by curiosity and a desire to express ideas through various mediums.
+          </p>
+          <p>
+            I've spent the last few years honing my skills in illustration, digital art, and graphic design. 
+            Also, i'm designing ang creating website and other digital content like UI/UX design. 
+            My goal is to bring concepts to life and evoke emotions through my creations.
+          </p>
+          <ul class="stats">
+            <li><strong>8+</strong><span>Years creating</span></li>
+            <li><strong>20+</strong><span>Artworks</span></li>
+            <li><strong>10+</strong><span>Projects</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS / GALLERY (filled automatically from js/artworks.js) -->
+    <section class="section section--blue" id="works">
+      <div class="container">
+        <div class="section__head reveal">
+          <div class="section__tag"><span class="num">02</span> Selected works</div>
+          <h2>My artworks</h2>
+        </div>
+
+        <div class="filters reveal" id="filters" role="tablist" aria-label="Filter artworks"></div>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--yellow" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <div class="section__tag"><span class="num">03</span> What I do</div>
+          <h2>Skills &amp; tools</h2>
+        </div>
+        <div class="cards">
+          <article class="card card--red reveal">
+            <div class="card__icon">✎</div>
+            <h3>Illustration</h3>
+            <p>Concept art and character design.</p>
+          </article>
+          <article class="card card--cyan reveal">
+            <div class="card__icon">◧</div>
+            <h3>UX/UI Design</h3>
+            <p>Creating intuitive and engaging user experiences.</p>
+          </article>
+          <article class="card card--pink reveal">
+            <div class="card__icon">◉</div>
+            <h3>Digital Art</h3>
+            <p>Bringing creativity to life through digital mediums.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--dark" id="contact">
+      <div class="container contact reveal">
+        <div class="section__tag section__tag--light"><span class="num">04</span> Let's work together</div>
+        <h2>Have a project <span class="hl">in mind?</span></h2>
+        <a class="contact__mail" href="mailto:jrastudio0426@gmail.com">jrastudio0426@gmail.com</a>
+        <div class="socials">
+          <a href="https://www.instagram.com/jra.artist02/" aria-label="Instagram">Instagram</a>
+          <a href="https://vgen.co/JRA" aria-label="VGen">Vgen</a>
+          <a href="https://www.facebook.com/johnrobert.arevalo.92" aria-label="Facebook">Facebook</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> JRA &middot; All rights reserved &middot; Made with <svg class="px-inline" aria-hidden="true"><use href="#px-heart"/></svg></p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">×</button>
+    <figure>
+      <img id="lightboxImg" src="" alt="" />
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="js/artworks.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
