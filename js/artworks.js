@@ -26,5 +26,20 @@ const ARTWORKS = [
   { src: "images/CAPTAIN AMERICA.jpg", title: "CAPTAIN AMERICA", category: "Illustration",   year: "2025" },
   { src: "images/VISION QUEST.png", title: "VISION QUEST", category: "Digital Art",    year: "2026" },
   { src: "images/THE GUARDIAN KNIGHT.png", title: "THE GUARDIAN KNIGHT", category: "Graphic Design", year: "2021" }
+   
+  /* ---------- Transferred from the previous portfolio (JRA-Artist) ----------
+     These load straight from the old site. If you ever delete the old site,
+     download these images into your images/ folder and change src to
+     "images/FILE NAME" so they keep working. */
+  { src: "https://jra-artist.github.io/JRA-Artist/ADLAW.jpg", title: "ADLAW", category: "Digital Art", year: "2021" },
+  { src: "https://jra-artist.github.io/JRA-Artist/MISHIMA.png", title: "MISHIMA", category: "Digital Art", year: "2021" },
+  { src: "https://jra-artist.github.io/JRA-Artist/STORM%20X-MEN.png", title: "STORM X-MEN", category: "Digital Art", year: "2021" },
+  { src: "https://jra-artist.github.io/JRA-Artist/JRA%20NEW%20PFP%20111.jpg", title: "JRA NEW PFP", category: "Digital Art", year: "2021" },
+  { src: "https://jra-artist.github.io/JRA-Artist/CHIBI%20PANDA%20LOVE%20W%20sign.png", title: "CHIBI PANDA LOVE", category: "Digital Art", year: "2021" },
+  { src: "https://jra-artist.github.io/JRA-Artist/Celestial%20Art.png", title: "CELESTIAL ART", category: "Digital Art", year: "2021" },
+  { src: "https://jra-artist.github.io/JRA-Artist/JETFIRE.png", title: "JETFIRE", category: "Digital Art", year: "2021" },
+  { src: "https://jra-artist.github.io/JRA-Artist/VGEN%20AND%20JETFIRE%202.png", title: "VGEN AND JETFIRE", category: "Digital Art", year: "2021" },
+  { src: "https://jra-artist.github.io/JRA-Artist/SUNFLOWER%20GIRL.png", title: "SUNFLOWER GIRL", category: "Digital Art", year: "2021" }
+];
 ];
  
