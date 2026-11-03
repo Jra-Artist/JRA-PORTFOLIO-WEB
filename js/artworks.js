@@ -25,8 +25,8 @@ const ARTWORKS = [
   { src: "images/JRA MAGAZINE COVER.png", title: "JRA MAGAZINE COVER", category: "Graphic Design", year: "2021" },
   { src: "images/CAPTAIN AMERICA.jpg", title: "CAPTAIN AMERICA", category: "Illustration",   year: "2025" },
   { src: "images/VISION QUEST.png", title: "VISION QUEST", category: "Digital Art",    year: "2026" },
-  { src: "images/THE GUARDIAN KNIGHT.png", title: "THE GUARDIAN KNIGHT", category: "Graphic Design", year: "2021" }
-   
+  { src: "images/THE GUARDIAN KNIGHT.png", title: "THE GUARDIAN KNIGHT", category: "Graphic Design", year: "2021" },
+
   /* ---------- Transferred from the previous portfolio (JRA-Artist) ----------
      These load straight from the old site. If you ever delete the old site,
      download these images into your images/ folder and change src to
@@ -41,5 +41,3 @@ const ARTWORKS = [
   { src: "https://jra-artist.github.io/JRA-Artist/VGEN%20AND%20JETFIRE%202.png", title: "VGEN AND JETFIRE", category: "Digital Art", year: "2021" },
   { src: "https://jra-artist.github.io/JRA-Artist/SUNFLOWER%20GIRL.png", title: "SUNFLOWER GIRL", category: "Digital Art", year: "2021" }
 ];
-];
- 
